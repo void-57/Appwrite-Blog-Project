@@ -12,7 +12,7 @@ function LogoutBtn() {
       .logout()
       .then(() => {
         dispatch(logout());
-       
+        navigate("/");
       })
       .catch((error) =>
         console.log("LogoutBtn :: logoutHandler :: error", error)
