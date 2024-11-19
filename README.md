@@ -41,18 +41,29 @@ This project is a **blogging platform** built using modern web development techn
 
 ## 📂 Project Structure
 
-plaintext
+```plaintext
 Appwrite-Blog-Project/
-├── public/           # Static assets
-├── src/
-│   ├── components/   # Reusable UI components
-│   ├── pages/        # Main pages for routing
-│   ├── store/        # Redux slices for global state
-│   ├── appwrite/     # Appwrite API service wrappers
-│   └── App.js        # Main application entry point
-├── .env              # Environment configuration
-├── package.json      # Project dependencies and scripts
-└── README.md         # Project documentation
+├── src/                      # Source code
+│   ├── appwrite/             # Appwrite API service wrappers
+│   ├── assets/               # Static resources like images and icons
+│   ├── components/           # Reusable UI components
+│   ├── config/               # App configuration and constants
+│   ├── store/                # Redux slices for global state management
+│   ├── App.css               # Global CSS for the application
+│   ├── App.jsx               # Main application component
+│   ├── index.css             # Styles for the application entry point
+│   ├── main.jsx              # Main entry file for rendering the app
+├── .env.sample               # Sample environment configuration
+├── .gitignore                # Files and directories to ignore in git
+├── README.md                 # Project documentation
+├── eslint.config.js          # ESLint configuration for code linting
+├── index.html                # Main HTML template
+├── package-lock.json         # Lockfile for dependencies
+├── package.json              # Project dependencies and scripts
+├── postcss.config.js         # PostCSS configuration
+├── tailwind.config.js        # Tailwind CSS configuration
+└── vite.config.js            # Vite build configuration
+```
 
 ## 🛠️ Setup and Installation
 
@@ -106,7 +117,7 @@ Before you begin, ensure you have the following installed and set up:
   VITE_APPWRITE_BUCKET_ID="<Your Appwrite Bucket ID>"
   VITE_TINYMCE="<Your TinyMCE API Key>"
 ```
-# Development and Deployment Guide
+
 
 ## Steps to Run and Deploy the Application
 
@@ -119,4 +130,3 @@ npm run dev
 ```
 
 
-see if there are any errors correct it
