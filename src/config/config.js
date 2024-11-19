@@ -4,7 +4,7 @@
   appDatabaseId: String(import.meta.env.VITE_APPWRITE_DATABASE_ID),
   appCollectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
   appBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
-  tinymcekey: String(import.meta.env.VITE_TINYMCE_API_KEY)
+  tinymcekey: String(import.meta.env.VITE_TINYMCE)
 };
 
 export default config;
