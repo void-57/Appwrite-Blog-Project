@@ -104,7 +104,7 @@ Before you begin, ensure you have the following installed and set up:
   VITE_APPWRITE_DATABASE_ID="<Your Appwrite Database ID>"
   VITE_APPWRITE_COLLECTION_ID="<Your Appwrite Collection ID>"
   VITE_APPWRITE_BUCKET_ID="<Your Appwrite Bucket ID>"
-  VITE_TINYMCE_API_KEY="<Your TinyMCE API Key>"
+  VITE_TINYMCE="<Your TinyMCE API Key>"
 ```
 # Development and Deployment Guide
 
