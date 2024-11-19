@@ -117,7 +117,7 @@ Before you begin, ensure you have the following installed and set up:
   VITE_APPWRITE_BUCKET_ID="<Your Appwrite Bucket ID>"
   VITE_TINYMCE="<Your TinyMCE API Key>"
 ```
-
+---
 
 ## Steps to Run and Deploy the Application
 
@@ -128,5 +128,12 @@ To start the local development server and run the application, use the following
 ```bash
 npm run dev
 ```
+
+### 2. Access the Application: After starting the development server, open your browser and navigate to:
+
+```bash
+http://localhost:5173
+```
+This will allow you to view and interact with the application locally.
 
 
