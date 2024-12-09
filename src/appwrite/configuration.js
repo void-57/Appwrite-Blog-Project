@@ -82,6 +82,7 @@ export class DatabaseService {
         config.appCollectionId,
         queries
       );
+      
     } catch (error) {
       console.log("Database service :: getAllPosts :: error", error);
       return false;

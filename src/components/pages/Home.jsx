@@ -11,6 +11,8 @@ function Home() {
     if (authStatus) {
       service.getAllPosts().then((posts) => {
         if (posts) setPosts(posts.documents);
+       
+        
       });
     }
   }, [authStatus]);
