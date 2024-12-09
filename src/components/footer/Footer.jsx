@@ -14,7 +14,7 @@ function Footer() {
               </div>
               <div>
                 <p className="text-sm text-gray-600">
-                  Made by <i>void57</i>🔥
+                  Made by <i><b>void57</b></i>🔥
                 </p>
               </div>
             </div>
