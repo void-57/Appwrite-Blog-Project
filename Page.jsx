@@ -21,13 +21,6 @@ function Page() {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={pageImage} />
       </Helmet>
-      <h1>{pageTitle}</h1>
-      <p>
-        {pageDescription}
-        <br />
-        Start exploring posts or unleash your creativity by sharing your stories
-        with the world!
-      </p>
     </div>
   );
 }
