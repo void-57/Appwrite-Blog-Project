@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import pageImage from "./src/assets/blog.png";
 function Page() {
   const pageTitle = "✍️ Your ❤️ Out - A Blogging Platform for Writers";
   const pageDescription =
@@ -13,13 +12,13 @@ function Page() {
         <title>{pageTitle}</title>
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={pageImage} />
+        <meta property="og:image" content="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/8103728/724163_416084.png" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content={pageImage} />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={pageImage} />
+        <meta name="twitter:image" content="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/8103728/724163_416084.png" />
       </Helmet>
     </div>
   );
