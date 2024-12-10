@@ -20,12 +20,12 @@ function Home() {
 
   if (!authStatus) {
     return (
-      <div className="w-full py-8 mt-4 text-center">
+      <div className="w-full py-8 mt-4 text-center mb-20 lg:mb-32">
         <Container>
           <div className="flex flex-wrap">
-            <div className="p-2 w-full mb-28 lg:mb-72">
+            <div className="p-2 w-full ">
               <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome</h1>
-              <p className="text-lg text-gray-600  mt-8 mb-8">
+              <p className="text-lg text-gray-600 mb-8">
                 ✍️ Your ❤️ Out is your go-to platform for creating, editing, and managing blog posts. View posts from others, share your own, and connect with a community of writers.
               </p>
               { (
