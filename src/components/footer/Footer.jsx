@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-800 text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap -mx-4">
+        <div className="flex flex-wrap -mx-4 md:py-8">
           <div className="w-full md:w-1/2 lg:w-5/12 px-4 mb-8 md:mb-0">
             <div className="flex items-center space-x-4 mb-4 justify-center">
               <Logo/>
