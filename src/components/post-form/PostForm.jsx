@@ -17,7 +17,7 @@ function PostForm({ post }) {
     });
 
   const navigate = useNavigate();
-  const userData = useSelector((state) => state.auth.userData);
+  const userData = useSelector((state) => state.auth.userData);  
  
   
   
@@ -40,9 +40,6 @@ function PostForm({ post }) {
       }
     } else {
       const file = await service.uploadFile(data.image[0]);
-      
-      console.log(userData);
-      // console.log(file);
 
       if (file) {
         const fileId = file.$id;
