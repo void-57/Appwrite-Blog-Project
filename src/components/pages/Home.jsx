@@ -20,7 +20,7 @@ function Home() {
 
   if (!authStatus) {
     return (
-      <div className="w-full py-8 mt-4 text-center mb-20 lg:mb-32 xl:mb-72">
+      <div className="w-full py-8 mt-4 text-center mb-20 ">
         <Container>
           <div className="flex flex-wrap">
             <div className="p-2 w-full ">
