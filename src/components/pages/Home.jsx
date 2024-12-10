@@ -23,7 +23,7 @@ function Home() {
       <div className="w-full py-8 mt-4 text-center">
         <Container>
           <div className="flex flex-wrap">
-            <div className="p-2 w-full mb-28 lg:md-40">
+            <div className="p-2 w-full mb-28 lg:mb-40">
               <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome</h1>
               <p className="text-lg text-gray-600  mt-8 mb-8">
                 ✍️ Your ❤️ Out is your go-to platform for creating, editing, and managing blog posts. View posts from others, share your own, and connect with a community of writers.
