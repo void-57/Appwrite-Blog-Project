@@ -13,10 +13,41 @@ export class DatabaseService {
 
   async createPost({ title, content, slug, featuredImage, status, userId }) {
     try {
+      let uniqueSlug = slug;
+      let attempts = 0;
+      const maxAttempts = 10;
+
+      while (attempts < maxAttempts) {
+        try {
+          return await this.databases.createDocument(
+            config.appDatabaseId,
+            config.appCollectionId,
+            uniqueSlug,
+            {
+              title,
+              content,
+              featuredImage,
+              status,
+              userId,
+            }
+          );
+        } catch (error) {
+          if (error.code === 409 || error.message.includes("already exists")) {
+            // If slug already exists, add a random string
+            const randomString = Math.random().toString(36).substring(2, 8);
+            uniqueSlug = `${slug}-${randomString}`;
+            attempts++;
+          } else {
+            throw error;
+          }
+        }
+      }
+
+      // If we've exhausted attempts, use ID.unique()
       return await this.databases.createDocument(
         config.appDatabaseId,
         config.appCollectionId,
-        slug,
+        ID.unique(),
         {
           title,
           content,
@@ -82,7 +113,6 @@ export class DatabaseService {
         config.appCollectionId,
         queries
       );
-      
     } catch (error) {
       console.log("Database service :: getAllPosts :: error", error);
       return false;
@@ -114,8 +144,8 @@ export class DatabaseService {
     }
   }
 
-  getFilePreview(fileId) {
-    return this.bucket.getFilePreview(config.appBucketId, fileId);
+  getFileView(fileId) {
+    return this.bucket.getFileView(config.appBucketId, fileId);
   }
 }
 
